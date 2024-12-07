@@ -84,6 +84,24 @@
             color: #fff;
         }
 
+        /* Button styles */
+        .social-button, .download-button {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: #0f0f0f;
+            background: #39ff14;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 0 10px #39ff14, 0 0 40px #39ff14;
+            transition: 0.3s;
+        }
+
+        .social-button:hover, .download-button:hover {
+            background: #0d860d;
+            box-shadow: 0 0 20px #0d860d, 0 0 60px #0d860d;
+        }
     </style>
 </head>
 <body>
@@ -96,12 +114,23 @@
             <img src="profile.png" alt="Profile Picture" class="profile-img">
             <h2>Vuln Ramzey Elsayed</h2>
             <p>Welcome to my personal page! Here, you'll find my latest work and research in penetration testing, bug hunting, and cybersecurity.</p>
+            
+            <!-- Social Links -->
+            <div>
+                <a href="https://ar-ar.facebook.com/people/Ramzey-Elsayed-Mohamed/100035076459679/" target="_blank" class="social-button">Facebook</a>
+                <a href="https://eg.linkedin.com/in/ramzey-elsayed-mohamed-1a2126246" target="_blank" class="social-button">LinkedIn</a>
+                <a href="https://medium.com/@zpx15266" target="_blank" class="social-button">Medium</a>
+                <a href="https://vulnzero.blogspot.com/search/label/Write%20up" target="_blank" class="social-button">My Write-ups</a>
+            </div>
         </section>
 
         <!-- Sidebar for ads -->
         <aside class="ads-sidebar">
             <div class="ads-container">
-                <div id="frame" style="width: 250px;"><iframe data-aa='2368104' src='//ad.a-ads.com/2368104?size=250x250' style='width:250px; height:250px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe><a style="display: block; text-align: right; font-size: 12px" id="frame-link" href="https://aads.com/campaigns/new/?source_id=2368104&source_type=ad_unit&partner=2368104">Advertise here</a></div>
+                <div id="frame" style="width: 250px;">
+                    <iframe data-aa='2368104' src='//ad.a-ads.com/2368104?size=250x250' style='width:250px; height:250px; border:0px; padding:0; overflow:hidden; background-color: transparent;'></iframe>
+                    <a style="display: block; text-align: right; font-size: 12px" id="frame-link" href="https://aads.com/campaigns/new/?source_id=2368104&source_type=ad_unit&partner=2368104">Advertise here</a>
+                </div>
                 <iframe data-aa='2368104' src='//ad.a-ads.com/2368104?size=728x90'></iframe>
             </div>
         </aside>
@@ -109,6 +138,11 @@
         <section class="content-section">
             <h3>Road Map (PENTESTING)</h3>
             <p>Explore my roadmap for 2024, including strategies and tools for pentesting and vulnerability exploitation.</p>
+            
+            <!-- Download Links for Tools -->
+            <a href="https://ramzey-elsayed1121.github.io/my-Tools/" class="download-button" download="Half summary api test (1)">Download Half Summary API Test</a>
+            <a href="https://ramzey-elsayed1121.github.io/my-Tools/" class="download-button" download="Road Map.pdf">Download Road Map PDF</a>
+            <a href="https://ramzey-elsayed1121.github.io/my-Tools/" class="download-button" download="ssrf.txt">Download Summary SSRF File</a>
         </section>
     </main>
 
