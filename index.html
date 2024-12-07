@@ -32,11 +32,13 @@
             display: flex;
             justify-content: space-between;
             padding: 20px;
+            flex-wrap: wrap; /* Allow wrapping */
         }
 
         /* Profile section */
         .profile-section {
             width: 60%;
+            margin-bottom: 20px;
         }
 
         .profile-img {
@@ -48,12 +50,14 @@
         .content-section {
             width: 35%;
             padding-left: 20px;
+            margin-bottom: 20px;
         }
 
         /* Sidebar for ads */
         .ads-sidebar {
             width: 25%;
             margin-right: 20px;
+            margin-bottom: 20px;
         }
 
         /* Styling for ads */
@@ -102,6 +106,34 @@
             background: #0d860d;
             box-shadow: 0 0 20px #0d860d, 0 0 60px #0d860d;
         }
+
+        /* Media Queries for mobile responsiveness */
+        @media (max-width: 768px) {
+            .profile-section, .content-section, .ads-sidebar {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            .main-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .footer {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header h1 {
+                font-size: 28px;
+            }
+
+            .social-button, .download-button {
+                font-size: 1rem;
+                padding: 8px 16px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -120,7 +152,6 @@
                 <a href="https://ar-ar.facebook.com/people/Ramzey-Elsayed-Mohamed/100035076459679/" target="_blank" class="social-button">Facebook</a>
                 <a href="https://eg.linkedin.com/in/ramzey-elsayed-mohamed-1a2126246" target="_blank" class="social-button">LinkedIn</a>
                 <a href="https://medium.com/@zpx15266" target="_blank" class="social-button">Medium</a>
-               
             </div>
         </section>
 
